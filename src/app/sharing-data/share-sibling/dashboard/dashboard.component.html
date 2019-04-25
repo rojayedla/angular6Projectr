@@ -1,0 +1,6 @@
+<div class="well">
+  <h1>Dashboard</h1>
+  <p><b>Last Update:</b>{{ lastUpdate  | date:'medium' }}</p>
+  <p><b>Total Items:</b> {{  totalCount  }}</p>
+  <button class="btn btn-danger btn-lg" (click)="clearTodos()">Delete All</button>
+</div>

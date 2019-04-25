@@ -1,0 +1,13 @@
+:host {
+  font-family: Arial;
+}
+
+.tabs-selection {
+  background-color: #ddd;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+<div class="tabs-selection">
+    <app-tab
+      *ngFor="let tab of tabs; let i = index"
+      [active]="isSelected(i)"
+      (click)="setTab(i)">
+
+      {{ tab.title }}
+    </app-tab>
+  </div>
+
+    <div [ngSwitch]="tabNumber">
+      <ng-template ngFor [ngForOf]="tabs" let-tab let-i="index">
+        <app-tab-content *ngSwitchCase="i">
+          {{tab.content}}
+        </app-tab-content>
+      </ng-template>
+      <app-tab-content *ngSwitchDefault>Select a tab</app-tab-content>
+    </div>
